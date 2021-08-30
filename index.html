@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- Material Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700"
+    />
+    <!-- Roboto Mono -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/svelte-material-ui@4.0.0/bare.min.css"
+    />
+
+    <title>Let's Swap -_-</title>
+
+    <!-- This is a temporary favicon from https://icons8.com/icon/set/money/emoji -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <link rel="stylesheet" href="/build/bundle.css" />
+    <script defer src="/build/bundle.js"></script>
+    <script>
+      navigator.serviceWorker
+        .register("/serviceworker/sw.js")
+        .then(function (serviceWorkerRegistration) {
+          console.log("Service worker registered");
+        })
+        .catch(console.error);
+    </script>
+  </head>
+  <body>
+    <noscript>Please enable JavaScript to view this application.</noscript>
+  </body>
+</html>
